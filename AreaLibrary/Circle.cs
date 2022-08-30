@@ -26,20 +26,11 @@ namespace AreaLibrary
             FigParams = new double[] { data };
         }
 
-        public double[] Data;
-
-        /// <summary>
-        /// Data of the Circle (its radius) stored as an array. Only the first element is ever used.
-        /// </summary>
-        public double[] FigParams { get => Data; set => Data = value; }
-
-        /// <summary>
-        /// Calculates an Area of the Circle: pi * R * R.
-        /// </summary>
-        /// <returns>Full Area.</returns>
-        public double Area()
+        override public double Area()
         {
+            if (FigParams.Count() == 0) throw new Exception("Not enough parameters to calculate the Circle area.");
             return FigParams[0] * FigParams[0] * Math.PI;
+            
         }
     }
 }

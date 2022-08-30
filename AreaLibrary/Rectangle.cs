@@ -26,17 +26,15 @@ namespace AreaLibrary
             FigParams = new double[] { A, B };
         }
 
-        private double[] Data;
-
-        public double[] FigParams { get => Data; set => Data = value; }
-
-        public double Area()
+        override public double Area()
         {
+            if (FigParams.Count() < 2) throw new Exception("Not enough parameters to calculate the Rectangle area.");
             return FigParams[0] * FigParams[1];
         }
 
         public bool IsSquare()
         {
+            if (FigParams.Count() < 2) throw new Exception("Not enough parameters to determine the Square.");
             return double.Equals(FigParams[0], FigParams[1]);
         }
     }

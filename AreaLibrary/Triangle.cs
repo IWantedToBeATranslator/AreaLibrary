@@ -26,18 +26,16 @@ namespace AreaLibrary
             FigParams = new double[] {A, B, C};
         }
 
-        private double[] Data;
-
-        public double[] FigParams { get => Data; set => Data = value; }
-
-        public double Area()
+        override public double Area()
         {
+            if (FigParams.Count() < 3) throw new Exception("Not enough parameters to calculate the Triangle area.");
             double SemiP = (FigParams[0] + FigParams[1] + FigParams[2]) / 2;
-            return Math.Sqrt(SemiP*(SemiP- FigParams[0]) * (SemiP - FigParams[1]) * (SemiP - FigParams[2]));
+            return Math.Sqrt(SemiP * (SemiP - FigParams[0]) * (SemiP - FigParams[1]) * (SemiP - FigParams[2]));
         }
 
         public bool IsRight()
         {
+            if (FigParams.Count() < 3) throw new Exception("Not enough parameters to determine the Triangle.");
             double Side1, Side2, Hypothenuse;
             if (FigParams[0] > FigParams[1])
             {

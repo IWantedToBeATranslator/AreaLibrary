@@ -6,9 +6,27 @@ using System.Threading.Tasks;
 
 namespace AreaLibrary
 {
-    public interface Figure
+    public partial class Figure
     {
-        public double Area();
-        public double[] FigParams { get; set; }
+        public double[] Data;
+        public double[] FigParams
+        {
+            get
+            {
+                return Data;
+            }
+            set
+            {
+                bool check = true;
+                foreach (double v in value)
+                {
+                    if (v <= 0) check = false;
+                }
+                if (check) Data = value;
+                else throw new NullReferenceException();
+            }
+        }
+
+        virtual public double Area() { return 0; }
     }
 }
