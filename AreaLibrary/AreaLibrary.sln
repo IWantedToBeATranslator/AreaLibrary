@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaLibrary", "AreaLibrary.csproj", "{0B316040-B046-44A4-96E4-B99C2EDDF2C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaLibraryTests", "..\AreaLibraryTests\AreaLibraryTests.csproj", "{2A973BEE-A38F-4D6E-BBF7-1E804DDD245C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{181BF1F5-EB86-4237-8873-4442336EA619}"
+	ProjectSection(SolutionItems) = preProject
+		..\TestSqLite.db = ..\TestSqLite.db
+		..\TestSqlQuery.sql = ..\TestSqlQuery.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B316040-B046-44A4-96E4-B99C2EDDF2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B316040-B046-44A4-96E4-B99C2EDDF2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B316040-B046-44A4-96E4-B99C2EDDF2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B316040-B046-44A4-96E4-B99C2EDDF2C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A973BEE-A38F-4D6E-BBF7-1E804DDD245C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A973BEE-A38F-4D6E-BBF7-1E804DDD245C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A973BEE-A38F-4D6E-BBF7-1E804DDD245C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A973BEE-A38F-4D6E-BBF7-1E804DDD245C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {537CA783-F4D4-427E-A416-8A78EF8E833E}
+	EndGlobalSection
+EndGlobal
